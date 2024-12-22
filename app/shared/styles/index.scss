@@ -1,0 +1,40 @@
+@use "normalize-scss";
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $background;
+  color: $white;
+  position: relative;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  .gridMainLayout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+
+    @media (max-width: $md) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    &::-webkit-scrollbar * {
+      display: none;
+    }
+  }
+}
