@@ -17,9 +17,15 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/icon/*": ["app/shared/assets/icon/*"],
+      "@/ui/*": ["app/shared/ui/*"],
+      //"@/variables": ["app/styles/_variables.scss"]
     }
+
+
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

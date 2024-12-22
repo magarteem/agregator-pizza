@@ -15,11 +15,14 @@
     "sass": "^1.83.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
+    "install": "^0.13.0",
+    "npm": "^11.0.0",
     "typescript": "^5"
   }
 }
