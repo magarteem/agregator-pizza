@@ -4,24 +4,33 @@ $background-hover: #ffffff1a;
 $black_800: #141414cc;
 $black_1000: #141414;
 
-$white: #ffffff;
-$white_40: #ffffff0a;
-$white_100: #ffffff1a;
-$white_200: #ffffff33;
-$white_500: #ffffff80;
-$white_700: #ffffffb3;
-
-$grey_200: #9d9d9d33;
-
-$yellow: #d9ff02;
-$yellow_2: #f9e000;
-$yellow_40: #f9e0000a;
-$yellow_1000: #d9ff02;
-
-$silver_1000: #c0c0c0;
-$silver_40: #c0c0c00a;
-
-$bronze_40: #cd7f320a;
-$bronze_1000: #cd7f32;
-
 $pink_1000: #f44c80;
+$pink_2000: #fd0011;
+
+// styles/variables.scss
+
+// Светлая тема
+$light-primary: #111111;
+$light-secondary: #f8f9fa;
+$light-text: #4ded18;
+
+// Темная тема
+$dark-primary: #eef206;
+$dark-secondary: #343a40;
+$dark-text: #0d23eb;
+
+//// Тема по умолчанию (светлая)
+//:root {
+//  --primary-color: #{$light-primary};
+//  --secondary-color: #{$light-secondary};
+//  --text-color: #{$light-text};
+//  --bcg-color: #{$light-text};
+//}
+
+//// Темная тема
+//[data-theme="dark"] {
+//  --primary-color: #{$dark-primary};
+//  --secondary-color: #{$dark-secondary};
+//  --text-color: #{$dark-text};
+//  --bcg-color: #{$dark-text};
+//}

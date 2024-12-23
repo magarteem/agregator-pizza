@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
+import path from "path";
+
 const nextConfig = {
+  sassOptions: {
+    //includePaths: [path.join(__dirname, "styles")],
+    //prependData: '@use "./app/shared/styles/_variables.scss" as *;',
+
+    includePaths: [path.join(process.cwd(), "styles")],
+    prependData: `@use "./app/shared/styles/_variables.scss" as *;`,
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>

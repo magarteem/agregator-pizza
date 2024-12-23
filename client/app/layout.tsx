@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import { Header } from "./widgets/header/Header";
+import { Providers } from "./core/providers/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,12 +16,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  //const theme = "light"; // Установите тему на сервере
+
+  //suppressHydrationWarning={true} что делает
+  //
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
-        <Header />
-        {children}
-        <footer>footer</footer>
+        <Providers>
+          <Header />
+          {children}
+          <footer>footer</footer>
+        </Providers>
       </body>
     </html>
   );

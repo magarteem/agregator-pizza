@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import ArrowBottom from "@/icon/ArrowBottom.svg?svgr";
 
 export default function Home() {
